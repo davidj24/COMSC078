@@ -1,10 +1,10 @@
 import math
 
-# David Jo. The purpose of this program is for us to practice working on desigining functions
-# and calling/testing them.
+# David Jo. Assignment 1 "Functions" Part 1
+# Program purpose: calculate the mean, geometric  mean, and harmonic mean and reciprocal 
+# given a number or 3 numbers (for the mean functions).
 
 
-# ============= Part 1 Statistical Functions ===============
 # Do we need docstrings? I hope not because these functions are pretty self explanatory
 def reciprocal(num):
     return 1/num
@@ -19,12 +19,6 @@ def harmonic_mean(num1, num2, num3):
     return reciprocal(mean(reciprocal(num1), reciprocal(num2), reciprocal(num3)))
 
 
-
-
-
-
-# Copy and paste your four functions here (or write them here in the
-# first place)
 # this code goes AFTER your functions.
 def main():
   print("Reciprocal of 8 is", reciprocal(8), "[should be 0.125]")
