@@ -1,5 +1,10 @@
 import math
 
+# David Jo. Assignment 2 "Higher Order Functions"
+# Program prupose: To demonstrate understanding of higher order functions and lambda functions by
+# creating a program that takes in a function as an argument and returns the sum of the function operating on numbers
+# between the lower and upper bounds (inclusive)
+
 def summation(f, lower, upper):
     """This function accepts arguments that include a function, lower bound,
     and upper bound. It then sums the values from the function for each of
