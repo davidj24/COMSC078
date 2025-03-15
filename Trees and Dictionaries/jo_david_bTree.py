@@ -33,7 +33,9 @@ def print_tree(t, indent=0):
 def main():
     the_tree = tree(4, [tree(2, [tree(1), tree(3)]), tree(6, [tree(5)])])
     print_tree(the_tree)
-    print(num_leaves(the_tree))
+    print(f"Tree label: {label(the_tree)}")
+    print(f"The branches: {branches(the_tree)}")
+    print(f"The number of leaves: {num_leaves(the_tree)}")
 
 
 if __name__ == "__main__":
