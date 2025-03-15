@@ -9,6 +9,14 @@ def label(tree):
 def branches(tree):
     return tree[1:]
 
+def is_leaf(tree):
+    return not branches(tree)
+
+def num_leaves(tree):
+    if is_leaf(tree):
+        return 1
+    return sum([num_leaves(branch) for branch in branches(tree)])
+
 def is_tree(tree):
     if type(tree) != list or len(tree) < 1:
         return False
@@ -17,17 +25,15 @@ def is_tree(tree):
             return False
     return True
 
-
 def print_tree(t, indent=0):
     print(' ' * indent + str(label(t)))
     for branch in branches(t):
         print_tree(branch, indent+1)
 
-
 def main():
     the_tree = tree(4, [tree(2, [tree(1), tree(3)]), tree(6, [tree(5)])])
     print_tree(the_tree)
-
+    print(num_leaves(the_tree))
 
 
 if __name__ == "__main__":
