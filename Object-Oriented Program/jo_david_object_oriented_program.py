@@ -78,7 +78,7 @@ class Rectangle(GeometricObject):
 def main():
     radius = float(input("Enter the radius of your circle: "))
     circle = Circle(radius)
-    rectangle = Rectangle(5.0, 10.0)
+    rectangle = Rectangle(4.0, 2.0)
 
     print()
     print(circle)
