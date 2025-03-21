@@ -1,5 +1,5 @@
 # David Jo. Assignment 6 "Object Oriented Program"
-# Program prupose: To implement a dictionary that will output amino acids given a nucleotide sequence
+# Program prupose: To implement a geometric object class and its subclasses to practice object oriented programming and inheritance
 
 import datetime
 import numpy as np
@@ -30,7 +30,7 @@ class GeometricObject:
 
 class Circle(GeometricObject):
     def __init__(self, radius:float):
-        super().__init__("blue", True, datetime.now())
+        super().__init__("blue", True, datetime.datetime.now())
         self.radius = radius
 
     def getRadius(self):
@@ -50,7 +50,7 @@ class Circle(GeometricObject):
 
 class Rectangle(GeometricObject):
     def __init__(self, width:float, height:float):
-        super().__init__("red", False, datetime.now())
+        super().__init__("red", False, datetime.datetime.now())
         self.width = width
         self.height = height
 
@@ -75,8 +75,16 @@ class Rectangle(GeometricObject):
     def __str__(self):
         return f"{super().__str__()} \nThe width is {self.width} \nThe height is {self.height} \nThe area is {self.getArea()} \nThe perimeter is {self.getPerimeter()}"
 
-
 def main():
     radius = float(input("Enter the radius of your circle: "))
     circle = Circle(radius)
-    #What does bro mean when he says pick appropriate values?
+    rectangle = Rectangle(5.0, 10.0)
+
+    print()
+    print(circle)
+    print()
+    print(rectangle)
+
+
+if __name__ == "__main__":
+    main()
