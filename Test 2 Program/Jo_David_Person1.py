@@ -56,17 +56,17 @@ class Student(Person):
 
 
 def main():
-    person1 = Person("Barack", "", "Obama")
-    person1.setBirthday(date(1961, 8, 4))
+    person1 = Person("Kobe", "", "Bryant")
+    person1.setBirthday(date(1978, 8, 23))
 
-    person2 = Person("Madonna")
-    person2.setBirthday(date(1958, 8, 16))
+    person2 = Person("Gigi", "", "Bryant")
+    person2.setBirthday(date(2006, 5, 1))
 
-    student1 = Student("Abel", "", "Baker", "his")
-    student1.setBirthday(date(2001, 2, 11))
+    student1 = Student("David", "W.", "Jo", "his")
+    student1.setBirthday(date(2005, 7, 15))
 
-    student2 = Student("Claudette", "", "Davis", "her")
-    student2.setBirthday(date(2002, 5, 28))
+    student2 = Student("Mia", "A.", "Katsaros", "her")
+    student2.setBirthday(date(2005, 4, 4))
 
     print(person1)
     print(person2)
