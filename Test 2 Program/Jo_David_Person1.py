@@ -27,13 +27,9 @@ class Person():
         return age
     
     def __str__(self):
-        if self.middleName and self.lastName:
-            return f"{self.firstName} {self.middleName} {self.lastName} is {self.getAge()} years old"
-        if self.middleName == "" and self.lastName:
-            return f"{self.firstName} {self.lastName} is {self.getAge()} years old"
-        if self.middleName and self.lastName == "":
-            return f"{self.firstName} {self.middleName} is {self.getAge()} years old"
-        return f"{self.firstName} is {self.getAge()} years old"
+        names = [self.firstName, self.middleName, self.lastName]
+        full_name = " ".join(name for name in names if name)
+        return f"{full_name} is {self.getAge()} years old."
 
 
 class Student(Person):
