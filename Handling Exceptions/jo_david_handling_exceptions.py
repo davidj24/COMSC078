@@ -1,3 +1,7 @@
+# David Jo. Assignment 10 "Handling Exceptions"
+# Program prupose: To demonstrate understanding of using try and except blocks to handle exceptions and keep program running when unexpected siutations arise
+
+
 from fractions import Fraction
 
 def readInt():
